@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paiyun Kalika Pvt. Ltd.</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -14,6 +17,30 @@
   <!-- Header  -->
   <header>
     <div class="container">
+
+      <nav class="nav1">
+        <h1 class="short-brand">
+          <a href="#">PK</a>
+        </h1>
+        <div class="search">
+          <input type="search" name="search" id="search">
+          <label for="search" class="icon">
+            <img src="./assets/icons/magnifier.svg" alt="">
+          </label>
+        </div>
+      </nav>
+
+      <nav class="nav2">
+        <h1 class="long-brand">
+          <a href="#">Paiyun Kalika Pvt. Ltd.</a>
+        </h1>
+        <div class="all-products-link">
+          <div class="icon2">
+            <img src="./assets/icons/list-text.svg" alt="">
+          </div>
+          <a href="./products">Products</a>
+        </div>
+      </nav>
 
     </div>
   </header>
@@ -25,7 +52,9 @@
     <!-- About -->
     <section class="about">
       <div class="container">
-
+        <p>
+          <b>Piyun Kalika Pvt. Ltd.</b> provides easily accessible <b>pharmacy products</b> for Pokhara Valley.
+        </p>
       </div>
     </section>
     <!-- ..About -->
@@ -33,6 +62,76 @@
     <!-- Item Gallery -->
     <section class="item-gallery">
       <div class="container">
+
+        <article class="item">
+          <figure class="item-img">
+            <img
+              src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+              alt="">
+          </figure>
+          <h2 class="item-name">
+            Bandage
+          </h2>
+          <div class="item-price">
+            Rs. 99.99
+          </div>
+        </article>
+
+        <article class="item">
+          <figure class="item-img">
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIWFhUXFRUWEhcYFx0YGhUVFRoYFhUYGBcYICggGBolGxcWITEhJSkrLi4uGCAzODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAgYBB//EADgQAAIBAgMGAwcEAQMFAAAAAAABAgMRITFBBBJRYYHwBXGRIkKhscHR4RMyUvGCI2KSBhQzcqL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/cQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHxsyNt8Vx3YdXx8gNKrtEY4N48CL/vOCMWFa+ZapVQNH9ZksKvEoRkdRqAaKZ9KlOuizGdwOgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMvx7bv06dlm8F9QKHjvivuReGr4vgYL2krVK133j9zjeA06W0f2XqNfmu8GYMKvMt0a4HoadQmhIyNn2jn3mXKe0AXLNE8Kj7/JVhXJFMDRhVJTNjU49+pYp1gLQOYzudAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHyTwPG/8AUm0b1Rr+KS6nspZHg/GE/wBSV+LAy2O+gkj4B9uSRl33zIV6/fv5n3e77YF+jVwzyy+muGpcpVbamTSnbHvryzLkKmXw/DA16VfvvMs05959/gyadTjl18rcmWqdXv72+YGnF9/AlS7/AAilTradr7onhW70/KAuwkyxTq8SjTn3+SZS7uBdTPpVhU5liMgOgAAAAAAAAAAAAAAAAAAAAAAAAAAPL/8AVGxWaqJYPPzPUEW00FOLjJYMD82miORp+K7A6M3F+cXxRnSQHHf3Hfl5fE+tHzv7XsB9U7fXn8cNSaM+++hXk/z3cRfw744oC/TrdOF2vPHis+87MK/S3qvujLU+8cPxiS05/j8csANelX/r4XX2LdGp11/K58u3lbNduyWObtos95cjRjP3Y6YyklqspR5Y49sC/Gqla74ZcHql8yWFeWkUuvTn5oho0N3PO98MdVd31Q/XXHjgscnisLvmBaVWV818dX2siSNeSzjfjZ/TDmZdSolnvee5Lhnh0Z8jUbV4yTWN3fLNY8Nc1oBu7PtkZYLNZrVeazLJ56lW3mm8JLBP6St/RubNO6xzAlAAAAAAAAAAAAAAAAAPjdgPoK9TbILUrz8TWi9QNAz9u8WhTw/c+Rn7dtk5LOy4IyZoDbXjMnol1Ol4pLl8DHoySWL+h1Urpd/gCfxSTrK0nisuXoebqwadmsS9tXiVsF9TA2rxFqV2rrUC6fGu/LzPlGopK6d0d2AifeWfdji/DTLLu2RK+/oRy78+uoBd98Mixs93gli/PC+N/IrJffDHqvsaOyRcUmsJzdqefsr3pJ8NOoGhslG/+nB43/1JZpPVJ/xaNelRUEorPFLV3aTsscjjY6Co00tbe08b6ey9H3zI61VuW5G17e227xSV8FdZ2xAmmuOt7RWWNk09W1nwwO6dPj1T5Oz9lYXstTmnC188f+Ulg0+h3LDN2xyvytktHriB3ClbKKXHTnmn5dPIr19jUsYvdqRxTyvydv3Jts+wVOWCbTeWLTeGjvjhY6Upb26/3xW9B/yWqeGf4ApOqnBVd21nu1Y4O1naSxtk/aXU3fDZuzT0148/l6mRUX+pNLKpTU/8l7L14WLvgM24RbztZ9OrA2AAAAAAAAAc1JWVytHat5Nx0Atnxu2Zn1K0nkyvvN5gac9qitfQr1PEbZRKO6R1EBZnt8nwRXnVbzbOGLAcTkcIklG6ImgPt9CpUj5lpuzIqqAqxbWpW2qpz+JPVRTrx7uBl7TPu7M3aFcv7VTM6pHuwFahtkqUrrGOqv8AI9Hsm1RqR3ov8dDzdWncr0a8qUt6PVaNcGB7LdI5d4+hH4dt0asd6PVap8yzOPfmBxQouUkuLvp1fzNnwSiqlR1cLL2YYaaO3B4yMhK0ZvW26sve9n65np9igqVHC3sU3PRq7vp5R+LAbdte6m4/u3tyml/L3rq+mK6czvY6ShG2eTfGUsMbPz9fIzYq+0UqbxUKe8/N4vLE9BsyvLyb1ef9tgZPjnjNPY4p1FKU5PCMFd4XTcb2UUsL3+J34Zt1Ost7ei0/heys1pkWdv8ADKVb/wAkU2sL2zSx0xWZSoeA0abuvRLN425+6wPviELS3VdReCzwdrxllndPNpZFtTco0Z63V+uDyWRW2qleSdle/srL2v2xV1ezXtY8olmNOyhFe6sObd0sv2vN9EBxUkk76KnL4ywz0wzvYveA0t2nHyvlb4aGZWe8t1ZzaS09iOF7PJvG65nodjp2iktLJdALAAAAAAAAINsV4s8xDapUal3+15nrKkbow/EtkT0AuxkpLei7r5EM4WZg0a86Lsnh8DT2bxaMsJ4PjpmBa3TmcCfducygBVPhLKJxYCO3f9kVWOv5J5rvM+Pr8gKrIm9CaonkV5vgBBVKtSJZnj3h6kTj3kgMzaYd3MnaYYnoqtK/9GZtezvg/QDEku7ENSmXatLu5A4+XzApUqkqU1ODs9VxXBnrfDdujWhdZ+8tUzzdSlfiQ0KkqUt+GDWfNcGB7WqvZ/zhw4np9ohvU6qTzgkvJ03FfG55bwzaY7RTko/uay1U1ikz1Xh1ZThCppKKjJ8GrtN3tzAx9nqW2ijUeU6ajfhK1msPJeuJ6GMt1tvKWKeilk4vh+TF2nZNxuEk/wBNvehJZ0nnl/Hnk74mlse0ytaa3tN+NmpJOyuvUC+8dL+jw6u/9kdV2Wiv5K9+UcX7zzOFufxt0kslhh6H1uEcrK+HDWy4vT/5A4Ucb688Hb2X/jm88WRVmrW0t7b5LCUf/bKx3+q5Lgsm3hhla2d+fI5pUHUth7HB6vi3mndAPD6LcnUeuEFwisL2eTwNyEbKxHRpWJgAAAAAAAADKu0U7lo5lEDz+27HcxatJxeOXyPYV6RlbVstwM/YfE3T9lq8TZo7ZCawaurX6nna1Bx5r5ESbjisV9gPVVIkEir4f4mmkpa/DRI0HC+KxQEMuvf9EUu9e8yZo+O4FWtHC/4RUqRL849tlWtHqvRAU5evwRyl/b+iJKi6/JZHEe7/AEA+7l+L+CK9fZb6L1LtNX0vzZN+muXSNwPLbVsXkZlSgz21bZe9wpV/Dr6SfSwHkHTIp0rnpKvhXBJeb+xXl4borvyQGFslWdGanDPVPJrgz3HgPiMXvTp+1Tm71afvU5POSVsU3jZYXb5mBLwqXC3z7zJdk8EqpqcN5NYqSe78eAHvaa3leL3442aeKzuR/oR0bX+K/wBy+5n+F0q8f3NN8UrPhi8uOhuUv1XnFden5Aqfor+Un5dH9ESRofxh1f29S6qM3wRJDZVq7gVKezJu7xfw7zL9OnY7jGx9AAAAAAAAAAAAAAOJxKVamaBHUgBibTs9zHr0HHLLVHp6tIpV6NwPOSjbFaWt5mr4VtsnaCWPH8kG0bM4u66om8IUVU3uTT5AbE0Qyj22WmuRFNcPkBXl3bFkNSPJvzwLM15/IjnDkurAza1LDiuCy696ldrHn8EaVRaX6JW8yrVpNaeS+gHNL1+S6Fylfj0Xlx5nNGi0ldNvRZevB2ZKtjqSwvux4Ln/AGBK6aebf/Ly+tiL9KGrjpnLjfh5MmpeBxzePmXqPhkI5RXoBkRowdt23SLel9e7k0div7r9bcNF3gbMdmSJYwSAy6HhiWiXkvv09C3T2KKzXfaRbAHMYJZI6AAAAAAAAAAAAAAAAAAAAAAAI507lWtRLx8lG4GJWpGfX2Z5xwZ6Krs5E9lAytl8Wt7NVW/3adeBZ/7ynLKa9eV/ySVfDEyJeCQ4AcuvD+UeePBXfwa9T7vxeCav1etizS8IgvdRcp7LFaAZn6Dlx+Wtu+hao7Flgll8HxfQvqCR0BBDZkiWMEjoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFgAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k="
+              alt="">
+          </figure>
+          <h2 class="item-name">
+            Bandage
+          </h2>
+          <div class="item-price">
+            Rs. 99.99
+          </div>
+        </article>
+
+        <article class="item">
+          <figure class="item-img">
+            <img
+              src="https://www.band-aid.com/sites/bandaid_us/files/product-images/bab_381370046691_band-aid_band_aid-tru_stay-sheer-assorted_80ct_007.jpg"
+              alt="">
+          </figure>
+          <h2 class="item-name">
+            Bandage
+          </h2>
+          <div class="item-price">
+            Rs. 99.99
+          </div>
+        </article>
+
+        <article class="item">
+          <figure class="item-img">
+            <img
+              src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+              alt="">
+          </figure>
+          <h2 class="item-name">
+            Bandage
+          </h2>
+          <div class="item-price">
+            Rs. 99.99
+          </div>
+        </article>
+
+        <article class="item">
+          <figure class="item-img">
+            <img
+              src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+              alt="">
+          </figure>
+          <h2 class="item-name">
+            Bandage
+          </h2>
+          <div class="item-price">
+            Rs. 99.99
+          </div>
+        </article>
 
       </div>
     </section>

@@ -1,3 +1,6 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Lato&display=swap");
+
 /* Universal Styling */
 * {
   margin: 0;
@@ -9,6 +12,7 @@
   max-width: 1100px;
   width: 100vw;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 img {
@@ -17,57 +21,161 @@ img {
   object-fit: cover;
 }
 
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.cursive {
+  font-family: "Cookie", cursive;
+}
+
+h1 {
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+p {
+  max-width: 50ch;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 20px 0px;
 }
 
 /* Common Styling */
-header{
-  height: 200px;
+header {
+  /* height: 200px; */
 }
 
-section{
-  height: 100vh;
+section {
+  padding-top: 50px;
 }
 
-footer{
+footer {
   height: 500px;
 }
 
 /* Header Styling */
 header {
-  background-color: #fa8334;
+  /* background-color: #fa8334; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid black;
+}
+
+input[type="search"] {
+  width: 80%;
+  max-width: 200px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  height: 30px;
+  font-size: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.nav1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
+}
+
+.nav2 {
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.long-brand {
+  font-size: 30px;
+}
+
+.all-products-link {
+  display: flex;
+  gap: 10px;
+}
+
+.icon2 {
+  width: 20px;
+  height: 20px;
 }
 
 /* Main Styling */
 main {
-  background-color: #cabac8;
+  /* background-color: #cabac8; */
 }
 
 /* About Styling */
 .about {
-  background-color: #fffd77;
+  /* background-color: #fffd77; */
 }
 
 /* Item Gallery Styling */
 .item-gallery {
-  background-color: #ffe882;
+  /* background-color: #ffe882; */
+  padding-top: 200px;
+}
+
+.item-gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
+  justify-content: center;
+  gap: 150px 100px;
+}
+
+.item-img {
+  width: 270px;
+  height: 270px;
+  padding-bottom: 30px;
+}
+
+.item-name {
+  padding: 10px;
+}
+
+.item-price {
+  padding: 10px;
+  text-align: right;
 }
 
 /* Organization Gallery Styling */
 .org-gallery {
-  background-color: #388697;
+  /* background-color: #388697; */
 }
 
 /* Contact Styling */
 .contact {
-  background-color: #a09ebb;
+  /* background-color: #a09ebb; */
 }
 
 /* Footer Styling */
 footer {
-  background-color: #271033;
+  /* background-color: #271033; */
 }
 
 /* Responsive Styling */
