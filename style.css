@@ -115,16 +115,6 @@ input[type="search"] {
   font-size: 30px;
 }
 
-.all-products-link {
-  display: flex;
-  gap: 10px;
-}
-
-.icon2 {
-  width: 20px;
-  height: 20px;
-}
-
 /* Main Styling */
 main {
   /* background-color: #cabac8; */
