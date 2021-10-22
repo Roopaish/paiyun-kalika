@@ -49,7 +49,7 @@ img {
 
 section {
   padding-top: 50px;
-  height: 100vh;
+  height: max-content;
   min-height: 650px;
 }
 
@@ -215,6 +215,10 @@ li {
   color: white;
 }
 
+.telephone .fas{
+  color:var(--primary-color);
+}
+
 .home .wave {
   position: absolute;
   bottom: -0.5rem;
@@ -266,12 +270,12 @@ li {
   width: 270px;
   height: 270px;
   border-radius: 5px;
-  padding: 5px;
+  /* padding: 5px; */
   position: relative;
 }
 
 .product-img img {
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .product-name {
@@ -280,25 +284,23 @@ li {
   left: 0;
   right: 0;
   padding: 10px;
-  background-image: linear-gradient(
-    transparent,
-    hsla(217, 97%, 46%, 0.267) 30%,
-    #09c5f993 74%
-  );
-  border-radius: 0 0 5px 5px;
+  background: var(--accent-color);
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  /* border-radius: 0 0 5px 5px; */
 }
 
 .products-list {
-  padding: 10px;
+  /* padding: 10px; */
   background: #eee;
-
+  overflow-y: hidden;
   overflow-x: scroll;
 }
 
 .products-wrapper {
   width: max-content;
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .products-list::-webkit-scrollbar {
@@ -311,6 +313,9 @@ li {
   text-align: center;
   overflow: hidden;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom left;
 }
 
 .about::before,
@@ -352,6 +357,7 @@ summary {
 /* Contact */
 .contact{
   margin-bottom: 50px;
+  padding-top:0;
   height: max-content;
 }
 
@@ -398,6 +404,10 @@ footer .container{
 
 footer i{
   color:white;
+}
+
+footer figure{
+  width: 500px;
 }
 
 /* Media Queries */
