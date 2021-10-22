@@ -350,7 +350,40 @@ summary {
 }
 
 /* Contact */
+.contact{
+  margin-bottom: 50px;
+  height: max-content;
+}
 
+.contact .input-fields{
+  gap: 50px;
+}
+
+.contact figure{
+  width: 400px;
+}
+
+form{
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+input,textarea{
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border:2px solid var(--accent-color);
+}
+
+input:focus, textarea:focus{
+  border-color: var(--primary-color);
+}
+
+.send{
+  align-self: flex-end;
+}
 
 /* Footer */
 footer {
