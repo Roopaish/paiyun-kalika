@@ -1,58 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
-.header{
-  background-color: white;
-}
-/* Products  */
-.products{
-  padding-top: 100px;
-}
-
-.products-list{
-  overflow-x: hidden;
-  background-color: transparent;
-  /* box-shadow: 0 0 3px 5px rgb(0, 0, 0, 0.1), 0 0 3px 5px rgb(0, 0, 0, 0.1); */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 25rem);
-  gap:0;
-}
-
-.product{
+* {
+  margin: 0;
   padding: 0;
-  max-width: unset;
-  width: unset;
-  background: #8c8;
-  border-radius: 0;
-  height: max-content;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.product-name{
-  border-radius: 0;
+html {
+  font-size: 62%;
 }
 
-.product-img img{
-  border-radius: 0;
+:root {
+  --primary-color: #1666b0;
+  --accent-color: #09bdf8;
 }
 
-.product, .product figure {
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  padding: 10px 25px;
+  margin: 0 auto;
 }
 
-.product figure img{
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1666b0;
+}
+
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+section {
+  padding-top: 50px;
+  height: max-content;
+  min-height: 650px;
+}
+
+/* Scrollbar */
+body {
+  scrollbar-width: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
   cursor: pointer;
 }
 
-.product:nth-child(3n+1) {
-  grid-column-end: span 2;
-  grid-row-end: span 2;
+::-webkit-scrollbar-track {
+  background: rgb(173, 236, 255);
+  /* border-radius: 5px; */
 }
 
-/* .product:hover figure {
+::-webkit-scrollbar-thumb {
+  background: blue;
+  /* border-radius: 5px; */
+}
+
+/* Navbar */
+.header {
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-brand {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.toggler {
+  display: none;
+}
+
+input[name="toggle-navbar"] {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar li a {
+  color: rgb(12, 0, 56);
+}
+
+.navbar li a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
   border-radius: 5px;
-  transform: scale(1.5);
-} */
+  transition: all 0.2s;
+}
+
+.header .container {
+  justify-content: space-between;
+}
+
+/* Products */
+.products .container {
+  padding-top: 60px;
+}
+
+.grid {
+  /* background-color: #09c6f9; */
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.grid li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 33%;
+  opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+.grid li img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Effect: Move Up */
+.grid.effect li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+}
+
+footer .container {
+  justify-content: space-between;
+}
+
+footer i {
+  color: white;
+}
+
+footer figure {
+  width: 500px;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .toggler {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar li a {
+    padding: 5px 10px;
+  }
+  .navbar li a:hover {
+    padding: 5px 10px;
+  }
+
+  .navbar {
+    z-index: -1;
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+
+    background-color: white;
+  }
+
+  input[name="toggle-navbar"]:checked ~ .navbar {
+    top: 70px;
+    opacity: 1;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+}
