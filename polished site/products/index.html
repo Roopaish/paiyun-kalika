@@ -34,6 +34,11 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./style.css">
 
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -44,17 +49,17 @@
       </a>
 
       <label class="toggler" for="toggle-navbar">
-        <i class="fas fa-bars">h</i>
+        <i class="fas fa-bars"></i>
       </label>
       <input type="checkbox" name="toggle-navbar" id="toggle-navbar">
 
-        <ul class="flex navbar">
-          <li><a href="../#home">Home</a></li>
-          <li><a href="../#products">Products</a></li>
-          <li><a href="../#about">About</a></li>
-          <li><a href="../#team">Team</a></li>
-          <li><a href="../#contact">Contact</a></li>
-        </ul>
+      <ul class="flex navbar">
+        <li><a href="../#home">Home</a></li>
+        <li><a href="../#products">Products</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#team">Team</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
     </div>
   </header>
 
@@ -77,9 +82,7 @@
 
         <article class="product">
           <figure class="product-img">
-            <img
-              src="../assets/company-images/office.jpeg"
-              alt="">
+            <img src="../assets/company-images/office.jpeg" alt="">
           </figure>
           <h2 class="product-name">
             Bandage
@@ -132,6 +135,20 @@
 
       </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container flex">
+      <h2> &copy; 2021 Paikun Kalika Pvt. Ltd. | all rights reserved.</h2>
+      <div class="icons flex">
+        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <a href="#"><i class="fab fa-instagram-square fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>
+
   <script src="../app.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>

@@ -120,12 +120,12 @@ body {
 
 ::-webkit-scrollbar-track {
   background: rgb(173, 236, 255);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 ::-webkit-scrollbar-thumb {
   background: blue;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 /* Navbar */
@@ -307,6 +307,7 @@ li {
 
 /* About */
 .about {
+  min-height: 500px;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -358,6 +359,14 @@ footer {
   padding: 20px 0;
 }
 
+footer .container{
+  justify-content: space-between;
+}
+
+footer i{
+  color:white;
+}
+
 /* Media Queries */
 @media (max-width: 700px) {
   .toggler{
@@ -390,4 +399,7 @@ footer {
     opacity: 1;
   }
   
+  footer .container{
+    justify-content: center;
+  }
 }
