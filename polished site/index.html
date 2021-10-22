@@ -30,37 +30,58 @@
   <link rel="canonical" href="url">
   <link rel="shortcut icon" type="image/png" href="">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
   <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+
+  <!--
+
+    Contact us for a new website: 
+
+  -->
+
+  <!--Header-->
   <header class="header">
     <div class="container flex">
       <a class="navbar-brand" href="#">
         <img src="assets/company-images/logo.png">
       </a>
 
-      <nav class="navbar">
-        <ul class="flex">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#service">Products</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <label class="toggler" for="toggle-navbar">
+        <i class="fas fa-bars">h</i>
+      </label>
+      <input type="checkbox" name="toggle-navbar" id="toggle-navbar">
+
+      <ul class="flex navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
     </div>
   </header>
 
   <!-- Home Section-->
-  <section class="home">
+  <section class="home" id="home">
     <div class="container flex">
       <div class="motto">
         <h1 class="banner">WE'RE HERE TO SERVE</h1>
         <h1 class="banner">YOUR HEALTHCARE NEEDS</h1>
-        <h3 class="slogan">Quality, Value, Service and Integrity</h3>
+        <h3 class="slogan">We Provide Quality, Value, Service and Integrity</h3>
         <a href="#products">
+
+          <a href="tel:123" class="telephone">
+            📞Call: <i>123</i>
+          </a>
           <button>View Products</button>
         </a>
       </div>
@@ -71,10 +92,95 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about">
+  <!-- Products -->
+  <section class="products" id="products">
     <div class="container">
-      <h1 class="title">WHO ARE WE</h1>
+
+      <div class="flex title-bar">
+        <h1 class="primary-title">Products</h1>
+
+        <a href="products/" class="view-all">
+          <button>View All</button>
+        </a>
+      </div>
+
+      <div class="products-list">
+
+        <div class="products-wrapper">
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+
+          <article class="product">
+            <figure class="product-img">
+              <img
+                src="https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw4c6c4646/products/L8428922/large/L8428922.JPG"
+                alt="">
+            </figure>
+            <h2 class="product-name">
+              Bandage
+            </h2>
+          </article>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h1 class="primary-title">WHO ARE WE</h1>
       <div class="content">
         <h3>We provide supplies in a cost-effective manner</h3>
 
@@ -99,18 +205,45 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h1 class="primary-title">contact us</h1>
+
+      <div>
+        <div class="image">
+          <img src="./images/contact-us.svg" alt="">
+        </div>
+
+        <form action="" class="flex">
+
+          <div class="inputBox">
+            <input type="text" placeholder="Name">
+          </div>
+
+          <input type="email" placeholder="e-mail">
+          <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+          <input type="submit" value="send">
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2> &copy; 2021 Paikun Kalika Pvt. Ltd. | all rights reserved.</h2>
+      <div class="icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
+
   <!-- Change header background on scroll -->
-  <script>
-    const header = document.querySelector('.header');
-    document.addEventListener('scroll', () => {
-      var scroll_position = window.scrollY;
-      if (scroll_position > 190) {
-        header.style.backgroundColor = 'white';
-      } else {
-        header.style.backgroundColor = 'transparent';
-      }
-    });
-  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
