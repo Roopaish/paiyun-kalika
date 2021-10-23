@@ -9,3 +9,5 @@
       > index_change.html
       > style_change.css
       > index.js
+
+- some changes made in files
