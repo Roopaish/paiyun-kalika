@@ -245,14 +245,15 @@
             <i class="fas fa-mobile-alt"></i> Call: <i>123</i>
           </a>
 
-          <!-- <input type="text" placeholder="SUBJECT" id="subject">
-          <textarea name="" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+          <div class="or">or</div>
 
-            <input type="button" class="send" style="cursor: pointer;" value="SEND"> -->
+          <input type="button" class="send" style="cursor: pointer;" onclick="FB.CustomerChat.showDialog();"
+            value="Chat With Facebook">
 
-            
+
           <!-- Messenger Chat Plugin Code -->
-          <div id="fb-root"></div>
+          <div id="fb-root">
+          </div>
 
           <!-- Your Chat Plugin code -->
           <div id="fb-customer-chat" class="fb-customerchat">

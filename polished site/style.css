@@ -374,7 +374,32 @@ summary {
 
 form{
   flex-direction: column;
-  align-self: flex-start;
+}
+
+form a{
+  margin: auto;
+}
+
+.or{
+  font-size: 16px;
+  position: relative;
+}
+
+.or::after,.or::before{
+  content: "";
+  width: 6em;
+  height: .07em;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: .6em;
+}
+
+.or::after{
+  right: 1em;
+}
+
+.or::before{
+  left: 1em;
 }
 
 input,textarea{
