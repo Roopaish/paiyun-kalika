@@ -18,6 +18,15 @@ toggler.addEventListener("change", () => {
   }
 });
 
+// Gallery
+// const images = document.querySelectorAll(".gallery .images figure img");
+
+// images.forEach((image)=>{
+//   image.addEventListener('click',()=>{
+
+//   })
+// })
+
 // Used only for generating products Html
 
 // const productsGrid = document.getElementById("grid");
@@ -30,7 +39,7 @@ toggler.addEventListener("change", () => {
 
 // function populateProducts(products) {
 //   products.forEach((product) => {
-    
+
 //     productsGrid.innerHTML += `
 //       <li>
 //         <article class="product">
