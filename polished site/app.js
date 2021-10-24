@@ -17,3 +17,33 @@ toggler.addEventListener("change", () => {
     header.style.backgroundColor = "transparent";
   }
 });
+
+// Used only for generating products Html
+
+// const productsGrid = document.getElementById("grid");
+
+// fetch("../products.json")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => populateProducts(data));
+
+// function populateProducts(products) {
+//   products.forEach((product) => {
+    
+//     productsGrid.innerHTML += `
+//       <li>
+//         <article class="product">
+//           <figure class="product-img">
+//             <img
+//               src="${product.image}"
+//               alt="${product.title}">
+//           </figure>
+//           <h2 class="product-name">
+//             ${product.title}
+//           </h2>
+//         </article>
+//       </li>
+//     `;
+//   });
+// }
